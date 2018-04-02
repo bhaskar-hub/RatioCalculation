@@ -1,2 +1,2 @@
 # RatioCalculation
-Stoichiometry prediction in form of ratios
+Stoichiometry prediction in the form of ratios
