@@ -4,9 +4,10 @@ Identification of the SRPS operons and prediction of protein stoichiometry of th
 
 ### Requirements
 
-1. The tool runs on linux machine.
-2. [RNAMotif](http://casegroup.rutgers.edu/casegr-sh-2.5.html)
-3. [RNAfold](https://www.tbi.univie.ac.at/RNA/#download)
+1. This tool runs on linux machine.
+2. Perl distribution above v5.7.3.
+3. [RNAMotif](http://casegroup.rutgers.edu/casegr-sh-2.5.html).
+4. [RNAfold](https://www.tbi.univie.ac.at/RNA/#download).
 
 ### Installation
 1. After installing the RNAMotif, please run `which rnamotif` if the output is `/usr/local/bin/rnamotif` or `/usr/bin/rnamotif`, then proceed to next step, otherwise, please export the path of RNAMotif folder with the following command:
