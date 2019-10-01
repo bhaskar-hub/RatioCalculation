@@ -1,5 +1,4 @@
 # SLOFE: Stem-LOop Free-Energy
-________________________________________________________________________________________________________________________________________
 Identification of the SRPS operons and prediction of protein stoichiometry of their encoded complex.
 
 ### Requirements
@@ -19,4 +18,13 @@ Identification of the SRPS operons and prediction of protein stoichiometry of th
 	```
 	export PATH=$PATH:/path/to/RNAfold/dir
 	```
-3. 
+### Input files preparation
+1. Genome of bacterial organism in fasta-format file.
+2. Descriptor file for the RNAMotif. Detailed description available in the RNAMotif [manual](http://casegroup.rutgers.edu/rnamotif.pdf). The sample descripter file is available in sample folder.
+3. Gene annotation file should be in standard genebank format.
+4. Operon map, i.e., operon annotation of the genome should be in Door database format.
+## Ratio prediction of the identified SRPS opeorns
+In order to predict the ratio/stoichiometry of the SRPS operons, please run the following command.
+	```
+	./SLOFE <genome_fasta-file> <descr-file> <gene_annotation_from_genebank> <operon_map>
+	```
