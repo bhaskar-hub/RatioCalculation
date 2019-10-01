@@ -20,10 +20,12 @@ Identification of the SRPS operons and prediction of protein stoichiometry of th
 	```
 ### Input files preparation
 1. Genome of bacterial organism in fasta-format file.
-2. Descriptor file for the RNAMotif. Detailed description available in the RNAMotif [manual](http://casegroup.rutgers.edu/rnamotif.pdf). The sample descripter file is available in sample folder.
+2. Descriptor file for the RNAMotif. Detailed description available in the RNAMotif [manual](http://casegroup.rutgers.edu/rnamotif.pdf). The sample descripter file is given in sample_input directory.
 3. Gene annotation file should be in standard genebank format.
 4. Operon map, i.e., operon annotation of the genome should be in Door database format.
 ## Ratio prediction of the identified SRPS opeorns
-In order to predict the ratio/stoichiometry of the SRPS operons, please run the following command.
+In order to predict the ratio/stoichiometry of the SRPS operons, SLOFE uses genome_file, descriptor_file, annotation_file and operon_map. Sample input files are given in sample_input directory. Command to run SLOFE:
+
+USAGE
 
 	./SLOFE <genome_fasta-file> <descr-file> <gene_annotation_from_genebank> <operon_map>
