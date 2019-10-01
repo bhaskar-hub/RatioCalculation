@@ -3,7 +3,7 @@ Identification of the SRPS operons and prediction of protein stoichiometry of th
 
 ### Requirements
 
-1. This tool runs on linux machine.
+1. This tool runs on Linux machine.
 2. Perl distribution above v5.7.3.
 3. [RNAMotif](http://casegroup.rutgers.edu/casegr-sh-2.5.html).
 4. [RNAfold](https://www.tbi.univie.ac.at/RNA/#download).
@@ -20,7 +20,7 @@ Identification of the SRPS operons and prediction of protein stoichiometry of th
 	```
 ### Input files preparation
 1. Genome of bacterial organism in fasta-format file.
-2. Descriptor file for the RNAMotif. Detailed description available in the RNAMotif [manual](http://casegroup.rutgers.edu/rnamotif.pdf). The sample descripter file is given in sample_input directory.
+2. Descriptor file for the RNAMotif. Detailed description is available in the RNAMotif [manual](http://casegroup.rutgers.edu/rnamotif.pdf). The sample descriptor file is given in sample_input directory.
 3. Gene annotation file should be in standard genebank format.
 4. Operon map, i.e., operon annotation of the genome should be in Door database format.
 ## Ratio prediction of the identified SRPS opeorns
