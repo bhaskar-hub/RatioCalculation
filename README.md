@@ -5,7 +5,7 @@ Identification of the SRPS operons and prediction of protein stoichiometry of th
 
 1. This tool runs on Linux machine.
 2. Perl distribution v5.7.3 or above.
-	> Additional perl module: List::Utill.
+	> Additional Perl module: List::Utill.
 3. [RNAMotif](http://casegroup.rutgers.edu/casegr-sh-2.5.html).
 4. [RNAfold](https://www.tbi.univie.ac.at/RNA/#download).
 
