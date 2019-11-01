@@ -39,5 +39,3 @@ USAGE
 
 	./SLOFE <genome_fasta-file> <descr-file> <gene_annotation> <operon_map>
 
-## Output files
-
