@@ -55,3 +55,46 @@ USAGE
 *Ratio of free-energy of stem-loops*
 
 *Predicted Ratio*
+
+
+**stable_stem-loops** : This tabulated file contains the predicted stable stem-loops from genome. Columns are as follows:
+
+*Gene start*
+
+*Gene end*
+
+*Gene strand*
+
+*Gene name*
+
+*Stem-loop strand*
+
+*Stem-loop start*
+
+*Stem-loop end*
+
+*Position of Stem-loop*
+
+*Stem-loop length*
+
+*Stem-loop sequence*
+
+*Stem-loop RNA sequence*
+
+*Stem-loop free-energy*
+
+*Stem-loop fold*
+
+*3'-end stem-length*
+
+*3'-end extended 10nt sequence*
+
+*3'-end stem plus extended 10nt sequence*
+
+*Operon number*
+
+*Position in operon*
+
+*U-content of stem-loop*
+
+*Poly(U) tail*
