@@ -39,3 +39,19 @@ USAGE
 
 	./SLOFE <genome_fasta-file> <descr-file> <gene_annotation> <operon_map>
 
+## Output files
+**Stoichiometry_ratio.csv** : This tabulated file contains the SRPS operons and their predicted ratios. Columns are as follows:
+
+*Operon number*
+
+*Operon strand*
+
+*Genes*
+
+*Operon start*
+
+*Operon end*
+
+*Ratio of free-energy of stem-loops*
+
+*Predicted Ratio*
