@@ -1,6 +1,10 @@
 # SLOFE: Stem-LOop Free-Energy
 Identification of the SRPS operons and prediction of protein stoichiometry of their encoded complex.
 
+### Table of contents
+* [Requirements](#Requirements)
+* [Installation](#Installation)
+
 ### Requirements
 
 1. This tool runs on Linux machine.
