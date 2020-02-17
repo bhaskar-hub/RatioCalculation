@@ -4,6 +4,10 @@ Identification of the SRPS operons and prediction of protein stoichiometry of th
 ### Table of contents
 * [Requirements](#Requirements)
 * [Installation](#Installation)
+* [Input files preparation](#Input-files-preparation)
+* [Ratio prediction of the identified SRPS opeorns](#Ratio-prediction-of-the-identified-SRPS-opeorns)
+* [Output files](#Output-files)
+
 
 ### Requirements
 
@@ -39,14 +43,14 @@ Identification of the SRPS operons and prediction of protein stoichiometry of th
 	```
 	./scripts/operon-Pro_Op_Db operon_map_from_Pro_Op_Db_database
 	```
-## Ratio prediction of the identified SRPS opeorns
+### Ratio prediction of the identified SRPS opeorns
 In order to predict the ratio/stoichiometry of the SRPS operons, SLOFE uses genome_file, descriptor_file, annotation_file and operon_map. Sample input files are given in sample_input directory. Command to run SLOFE:
 
 USAGE
 
 	./SLOFE <genome_fasta-file> <descr-file> <gene_annotation> <operon_map>
 
-## Output files
+### Output files
 **Stoichiometry_ratio.csv** : This tabulated file contains the SRPS operons and their predicted ratios. Columns are as follows:
 
 *Operon number*
