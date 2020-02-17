@@ -6,8 +6,8 @@ Identification of the SRPS operons and prediction of protein stoichiometry of th
 1. This tool runs on Linux machine.
 2. Perl distribution v5.7.3 or above.
 	> Additional Perl module: List::Utill.
-3. [RNAMotif](http://casegroup.rutgers.edu/casegr-sh-2.5.html).
-4. [RNAfold](https://www.tbi.univie.ac.at/RNA/#download).
+3. [RNAMotif](http://casegroup.rutgers.edu/casegr-sh-2.5.html): v3.0.7
+4. [RNAfold](https://www.tbi.univie.ac.at/RNA/#download): v2.1.8
 
 ### Installation
 1. After installing the RNAMotif, please run `which rnamotif` if the output is `/usr/local/bin/rnamotif` or `/usr/bin/rnamotif`, then proceed to next step, otherwise, please export the path of RNAMotif folder with the following command:
