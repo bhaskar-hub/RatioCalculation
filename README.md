@@ -33,15 +33,21 @@ Identification of the SRPS operons and prediction of protein stoichiometry of th
 3. Gene annotation file can be provided as given in sample_input directory. Alternatively, please provide gene annotation file in genbank format and run the following command:
 	```
 	./scripts/annotation_prep gene_annotation_file_in_genbank_format
+	Example:
+	./scripts/annotation_prep ../sample_input/raw_files/GCF_000008765.1_ASM876v1_genomic.gbff
 	```
 4. Operon map, i.e., operon annotation of the genome. SLOFE accepts operon annotation from one of these databases [Door](http://161.117.81.224/DOOR2/) or [ProOpDb](http://biocomputo2.ibt.unam.mx/OperonPredictor/). Alternatively, operon map can be provided as the same format as given in sample_input directory.
 	> If operon map is from Door database, please run the following command:
 	```
 	./scripts/operon-Door operon_map_from_Door_database
+	Example:
+	./scripts/operon-Door ../sample_input/raw_files/Operon_from_door_cace
 	```
 	>If operon annotation is from ProOpDb, please run the following command:
 	```
-	./scripts/operon-Pro_Op_Db operon_map_from_Pro_Op_Db_database
+	./scripts/operon-ProOpDb operon_map_from_Pro_Op_Db_database
+	Example:
+	./scripts/operon-ProOpDb ../sample_input/raw_files/Operon_from_ProOpDB_cace
 	```
 ### USAGE
 #### Ratio prediction of the identified SRPS opeorns
