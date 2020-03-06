@@ -1,5 +1,5 @@
 # SLOFE: Stem-LOop Free-Energy
-Identification of the SRPS operons and prediction of protein stoichiometry of their encoded complex.
+Identification of the SRPS operons and prediction of protein stoichiometry of their encoded complex. SLOFE is the combination of Perl and the UNIX utilities such as awk, sed and grep etc.
 
 ### Table of contents
 * [Requirements](#Requirements)
@@ -19,12 +19,31 @@ Identification of the SRPS operons and prediction of protein stoichiometry of th
 *Note: RNAMotif and RNAfold compressed source codes are provided in "dependencies" folder, as the older versions are difficult to find.*
 
 ### Installation
-1. After installing the RNAMotif, please run `which rnamotif` if the output is `/usr/local/bin/rnamotif` or `/usr/bin/rnamotif`, then proceed to next step, otherwise, please export the path of RNAMotif folder with the following command:
+#### Auto installation
+1. Installation of the RNAMotif and RNAfold from dependencies folder using the `install.sh`.
+	```
+	chmod 755 install.sh
+	sh install.sh
+	```
+#### Manual installation
+1. After downloading the RNAMotif, please follow these steps to install :
+	```
+	tar -xvzf rnamotif-3.0.7.tar.gz
+	cd rnamotif-3.0.7/
+	make
+	```
+2. After installing the RNAMotif, please run `which rnamotif` if the output is `/usr/local/bin/rnamotif` or `/usr/bin/rnamotif`, then proceed to next step, otherwise, please export the path of RNAMotif folder with the following command:
 	```
 	export PATH=$PATH:/path/to/RNAmotif/dir
 	```
-	
-2. After installing the RNAfold, please run `which RNAfold` if the output is `/usr/local/bin/RNAfold` or `/usr/bin/RNAfold`, then proceed to next step, otherwise, please export the path of RNAfold folder with the following command:
+3. After downloading the Vienna package (RNAfold is a tool in this package), please follow these steps to install :
+	```
+	tar -xvzf ViennaRNA-2.1.8.tar.gz
+	cd ViennaRNA-2.1.8/
+	./configure --prefix=/path/to/the/installation/dir
+	make
+	```
+4. After installing the RNAfold, please run `which RNAfold` if the output is `/usr/local/bin/RNAfold` or `/usr/bin/RNAfold`, then proceed to next step, otherwise, please export the path of RNAfold folder with the following command:
 	```
 	export PATH=$PATH:/path/to/RNAfold/dir
 	```
