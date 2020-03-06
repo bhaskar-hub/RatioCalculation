@@ -1,8 +1,0 @@
-
-parms
-        wc += gu;
-
-descr
-	h5(minlen=6 ,maxlen=40)
-		ss(minlen=3,maxlen=30 )
-	h3
