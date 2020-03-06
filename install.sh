@@ -1,5 +1,5 @@
 #!bin/bash
-#install rnamotif
+#install RNAmotif and RNAfold
 set -e
 
 cd dependencies/
