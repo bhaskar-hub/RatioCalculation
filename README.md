@@ -77,6 +77,7 @@ In order to predict the ratio/stoichiometry of the SRPS operons, SLOFE uses geno
 	perl SLOFE.pl <genome_fasta_file> <descr_file> <annotation_from_genbank> <operon_map>
 	Example:
 	perl SLOFE.pl sample_input/test_data/test_seq.fasta sample_input/test_data/H10-mod.descr sample_input/test_data/gene_annotation sample_input/test_data/operon_map
+	perl SLOFE.pl sample_input/Ccel_data/Ccel_genome.fasta sample_input/Ccel_data/H10-mod.descr sample_input/Ccel_data/Ccel_gene_annotation sample_input/Ccel_data/Ccel_operon_map
 #### Scripts
 1. `ratio_calc.pl` is part of `SLOFE.pl`.
 2. `extract_seq.pl` extarcts the desired sequence from a fasta file using the coordinates. Usage:
