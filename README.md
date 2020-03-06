@@ -1,5 +1,5 @@
 # SLOFE: Stem-LOop Free-Energy
-Identification of the SRPS operons and prediction of protein stoichiometry of their encoded complex. SLOFE is the combination of Perl and the UNIX utilities such as awk, sed and grep etc.
+Identification of the SRPS operons and prediction of protein stoichiometry of their encoded complex using the genome sequence. SLOFE is the combination of Perl and the UNIX utilities such as awk, sed and grep etc and it runs on Linux machine.
 
 ### Table of contents
 * [Requirements](#Requirements)
@@ -52,32 +52,43 @@ Identification of the SRPS operons and prediction of protein stoichiometry of th
 2. Descriptor file for the RNAMotif. Detailed description is available in the RNAMotif [manual](http://casegroup.rutgers.edu/rnamotif.pdf). The sample descriptor file is given in sample_input directory.
 3. Gene annotation file can be provided as given in sample_input directory. Alternatively, please provide gene annotation file in genbank format and run the following command:
 	```
-	./scripts/annotation_prep gene_annotation_file_in_genbank_format
+	perl scripts/annotation_script.pl gene_annotation_file_in_genbank_format
 	Example:
-	./scripts/annotation_prep ../sample_input/raw_files/GCF_000008765.1_ASM876v1_genomic.gbff
+	perl scripts/annotation_script.pl sample_input/raw_files/GCF_000008765.1_ASM876v1_genomic.gbff
 	```
 4. Operon map, i.e., operon annotation of the genome. SLOFE accepts operon annotation from one of these databases [Door](http://161.117.81.224/DOOR2/) or [ProOpDb](http://biocomputo2.ibt.unam.mx/OperonPredictor/). Alternatively, operon map can be provided as the same format as given in sample_input directory.
 	> If operon map is from Door database, please run the following command:
 	```
-	./scripts/operon-Door operon_map_from_Door_database
+	perl scripts/operon-door.pl operon_map_from_Door_database
 	Example:
-	./scripts/operon-Door ../sample_input/raw_files/Operon_from_door_cace
+	perl scripts/operon-door.pl sample_input/raw_files/Operon_from_door_cace
 	```
 	>If operon annotation is from ProOpDb, please run the following command:
 	```
-	./scripts/operon-ProOpDb operon_map_from_Pro_Op_Db_database
+	perl scripts/operon-pro_op_db.pl operon_map_from_Pro_Op_Db_database
 	Example:
-	./scripts/operon-ProOpDb ../sample_input/raw_files/Operon_from_ProOpDB_cace
+	perl scripts/operon-pro_op_db.pl sample_input/raw_files/Operon_from_ProOpDB_cace
 	```
 ### USAGE
 #### Ratio prediction of the identified SRPS opeorns
 In order to predict the ratio/stoichiometry of the SRPS operons, SLOFE uses genome_file, descriptor_file, annotation_file and operon_map. Sample input files are given in sample_input directory. Command to run SLOFE: 
 
-	
-	./SLOFE <genome_fasta_file> <descr_file> <annotation_from_genbank> <operon_map>
+	perl SLOFE.pl -h
+	perl SLOFE.pl <genome_fasta_file> <descr_file> <annotation_from_genbank> <operon_map>
 	Example:
-	./SLOFE sample_input/nc.fasta sample_input/H10-mod.descr sample_input/gene_annotation sample_input/operon_map
-	
+	perl SLOFE.pl sample_input/test_data/test_seq.fasta sample_input/test_data/H10-mod.descr sample_input/test_data/gene_annotation sample_input/test_data/operon_map
+#### Scripts
+1. `ratio_calc.pl` is part of `SLOFE.pl`.
+2. `extract_seq.pl` extarcts the desired sequence from a fasta file using the coordinates. Usage:
+	```
+	perl extarct_seq.pl -h
+	perl extract_seq.pl sample_input/raw_files/nc.fasta sample_input/raw_files/coords
+	```
+3. `maxTcontent.pl` calculates the maximum U-content and Poly(U) tails in a given sequence. Usage:
+	```
+	perl maxTcontent.pl -h
+	perl maxTcontent.pl sample_input/raw_files/extended_right_stem_seq
+	```
 
 ### Output files
 **Stoichiometry_ratio.csv** : This tabulated file contains the SRPS operons and their predicted ratios. Columns are as follows:
