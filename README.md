@@ -40,16 +40,16 @@ Identification of the SRPS operons and prediction of protein stoichiometry of th
 	make
 	```
 ### Input files preparation
-1. Test data (test_data) and real data (Ccel_data) is given in sample_input directory.
-2. Genome of bacterial organism in fasta-format file.
-3. Descriptor file for the RNAMotif. Detailed description is available in the RNAMotif [manual](http://casegroup.rutgers.edu/rnamotif.pdf). The sample descriptor file is given in sample_input directory.
-4. Gene annotation file can be provided as given in sample_input directory. Alternatively, please provide gene annotation file in genbank format and run the following command:
+   *Test data (test_data) and real data (Ccel_data) is given in sample_input directory.*
+1. Genome of bacterial organism in fasta-format file.
+2. Descriptor file for the RNAMotif. Detailed description is available in the RNAMotif [manual](http://casegroup.rutgers.edu/rnamotif.pdf). The sample descriptor file is given in sample_input directory.
+3. Gene annotation file can be provided as given in sample_input directory. Alternatively, please provide gene annotation file in genbank format and run the following command:
 	```
 	perl scripts/annotation_script.pl gene_annotation_file_in_genbank_format
 	Example:
 	perl scripts/annotation_script.pl sample_input/raw_files/GCF_000008765.1_ASM876v1_genomic.gbff
 	```
-5. Operon map, i.e., operon annotation of the genome. SLOFE accepts operon annotation from one of these databases [Door](http://161.117.81.224/DOOR2/) or [ProOpDb](http://biocomputo2.ibt.unam.mx/OperonPredictor/). Alternatively, operon map can be provided as the same format as given in sample_input directory.
+4. Operon map, i.e., operon annotation of the genome. SLOFE accepts operon annotation from one of these databases [Door](http://161.117.81.224/DOOR2/) or [ProOpDb](http://biocomputo2.ibt.unam.mx/OperonPredictor/). Alternatively, operon map can be provided as the same format as given in sample_input directory.
 	> If operon map is from Door database, please run the following command:
 	```
 	perl scripts/operon-door.pl operon_map_from_Door_database
