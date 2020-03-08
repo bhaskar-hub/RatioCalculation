@@ -7,7 +7,7 @@ Identification of the SRPS operons and prediction of protein stoichiometry of th
 * [Input files preparation](#Input-files-preparation)
 * [USAGE](#USAGE)
 * [Output files](#Output-files)
-* [Error handling during RNAMotif and RNAfold installation] (#Error-handling-during-RNAMotif-and-RNAfold-installation)
+* [Error handling during RNAMotif and RNAfold installation](#Error-handling-during-RNAMotif-and-RNAfold-installation)
 
 
 ### Requirements
