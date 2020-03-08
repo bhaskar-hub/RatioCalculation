@@ -17,11 +17,11 @@ Identification of the SRPS operons and prediction of protein stoichiometry of th
 	> Additional Perl module: List::Utill.
 3. [RNAMotif](http://casegroup.rutgers.edu/casegr-sh-2.5.html): v3.0.7
 4. [RNAfold](https://www.tbi.univie.ac.at/RNA/#download): v2.1.8  
-*Note: RNAMotif and RNAfold compressed source codes are provided in "dependencies" folder, as the older versions are difficult to find.*
+*Note: RNAMotif and RNAfold compressed sources are provided in "dependencies" directory, as the older versions are difficult to find. It is recommended to use these sources for the installation.*
 
 ### Installation
 #### Auto installation (Recommended)
-1. Installation of the RNAMotif and RNAfold from dependencies folder using the `install.sh`.
+1. Installation of the RNAMotif and RNAfold from dependencies directory using the `install.sh`.
 	```
 	chmod 755 install.sh
 	sh install.sh
