@@ -40,7 +40,7 @@ Identification of the SRPS operons and prediction of protein stoichiometry of th
 	make
 	```
 ### Input files preparation
-   *Test data (test_data) and real data (Ccel_data) is given in sample_input directory.*
+   *Test data (test_data) and real data (Ccel_data) are given in sample_input directory.*
 1. Genome of bacterial organism in fasta-format file.
 2. Descriptor file for the RNAMotif. Detailed description is available in the RNAMotif [manual](http://casegroup.rutgers.edu/rnamotif.pdf). The sample descriptor file is given in sample_input directory.
 3. Gene annotation file can be provided as given in sample_input directory. Alternatively, please provide gene annotation file in genbank format and run the following command:
