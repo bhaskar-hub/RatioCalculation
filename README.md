@@ -72,7 +72,7 @@ In order to predict the ratio/stoichiometry of the SRPS operons, SLOFE uses geno
 	
 	perl SLOFE.pl -h
 	perl SLOFE.pl <genome_fasta_file> <descr_file> <annotation_from_genbank> <operon_map> <output_directory>  
-	*Note: output_directory parameter is optional. If it is undefined, the current directory will be used for output.
+	*Note: <output_directory> parameter is optional. If it is undefined, the current directory will be used for output.
 	
 	Example:  
 	perl SLOFE.pl sample_input/test_data/test_seq.fasta sample_input/test_data/H10-mod.descr sample_input/test_data/gene_annotation sample_input/test_data/operon_map /sample_input/
