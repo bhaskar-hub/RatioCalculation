@@ -56,15 +56,15 @@ Identification of the SRPS operons and prediction of protein stoichiometry of th
 4. Operon map, i.e., operon annotation of the genome. SLOFE accepts operon annotation from one of these databases [Door](http://161.117.81.224/DOOR2/) or [ProOpDb](http://biocomputo2.ibt.unam.mx/OperonPredictor/). Alternatively, operon map can be provided as the same format as given in sample_input directory.
 	> If operon map is from Door database, please run the following command:
 	```
-	perl scripts/operon-door.pl operon_map_from_Door_database
+	perl scripts/operon_door.pl operon_map_from_Door_database
 	Example:
-	perl scripts/operon-door.pl sample_input/raw_files/Operon_from_door_cace
+	perl scripts/operon_door.pl sample_input/raw_files/Operon_from_door_cace
 	```
 	>If operon annotation is from ProOpDb, please run the following command:
 	```
-	perl scripts/operon-pro_op_db.pl operon_map_from_Pro_Op_Db_database
+	perl scripts/operon_pro_op_db.pl operon_map_from_Pro_Op_Db_database
 	Example:
-	perl scripts/operon-pro_op_db.pl sample_input/raw_files/Operon_from_ProOpDB_cace
+	perl scripts/operon_pro_op_db.pl sample_input/raw_files/Operon_from_ProOpDB_cace
 	```
 ### USAGE
 #### Ratio prediction of the identified SRPS opeorns
