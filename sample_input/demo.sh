@@ -14,10 +14,10 @@ perl ../SLOFE.pl test_data/test_seq.fasta test_data/H10-mod.descr test_data/gene
 #run following command to test annotation_script.pl
 #perl ../scripts/annotation_script.pl raw_files/GCF_000008765.1_ASM876v1_genomic.gbff
 
-#run following command to test operon-door.pl
-#perl ../scripts/operon-door.pl raw_files/Operon_from_door_cace
+#run following command to test operon_door.pl
+#perl ../scripts/operon_door.pl raw_files/Operon_from_door_cace
 
-#run following command to test operon-pro_op_db.pl
-#perl ../scripts/operon-pro_op_db.pl raw_files/Operon_from_ProOpDB_cace
+#run following command to test operon_pro_op_db.pl
+#perl ../scripts/operon_pro_op_db.pl raw_files/Operon_from_ProOpDB_cace
 
 #END
