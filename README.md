@@ -68,17 +68,17 @@ Identification of the SRPS operons and prediction of protein stoichiometry of th
 	```
 ### USAGE
 #### Ratio prediction of the identified SRPS opeorns
-In order to predict the ratio/stoichiometry of the SRPS operons, SLOFE uses genome_file, descriptor_file, annotation_file and operon_map. Sample input files are given in sample_input directory. Command to run SLOFE:  
-	```
+In order to predict the ratio/stoichiometry of the SRPS operons, SLOFE uses genome_file, descriptor_file, annotation_file and operon_map. Sample input files are given in sample_input directory. Command to run SLOFE:
+	
 	perl SLOFE.pl -h
-	perl SLOFE.pl <genome_fasta_file> <descr_file> <annotation_from_genbank> <operon_map> <output_directory>
-	```  
+	perl SLOFE.pl <genome_fasta_file> <descr_file> <annotation_from_genbank> <operon_map> <output_directory>  
+	
 	*Note: output_directory parameter is optional. If it is undefined, the current directory will be used for output.*  
 	Example:  
-	```
+	
 	perl SLOFE.pl sample_input/test_data/test_seq.fasta sample_input/test_data/H10-mod.descr sample_input/test_data/gene_annotation sample_input/test_data/operon_map /sample_input/
 	perl SLOFE.pl sample_input/Ccel_data/Ccel_genome.fasta sample_input/Ccel_data/H10-mod.descr sample_input/Ccel_data/Ccel_gene_annotation sample_input/Ccel_data/Ccel_operon_map /sample_input/
-	```
+	
 #### Scripts
 1. `ratio_calc.pl` is part of `SLOFE.pl`.
 2. `extract_seq.pl` extarcts the desired sequence from a fasta file using the coordinates. Usage:
