@@ -21,7 +21,11 @@ Identification of the SRPS operons and prediction of protein stoichiometry of th
 
 ### Installation
 #### Auto installation (Recommended)
-1. Installation of the RNAMotif and RNAfold from dependencies directory using the `install.sh`.
+1. Download the package using followng command:
+	```
+	git clone https://github.com/bhaskar-hub/SLOFE-RatioCalculation.git
+	```
+2. Installation of the RNAMotif and RNAfold from dependencies directory using the `install.sh`.
 	```
 	chmod 755 install.sh
 	sh install.sh
@@ -40,7 +44,7 @@ Identification of the SRPS operons and prediction of protein stoichiometry of th
 	make
 	```
 ### Input files preparation
-   *Test data (test_data) and real data (Ccel_data) are given in sample_input directory.*
+   *Test data (test_data) and real data (Ccel_data) are given in sample_input directory. `demo.sh` file is provided in sample_input directory to run all commands.*
 1. Genome of bacterial organism in fasta-format file.
 2. Descriptor file for the RNAMotif. Detailed description is available in the RNAMotif [manual](http://casegroup.rutgers.edu/rnamotif.pdf). The sample descriptor file is given in sample_input directory.
 3. Gene annotation file can be provided as given in sample_input directory. Alternatively, please provide gene annotation file in genbank format and run the following command:
@@ -64,13 +68,17 @@ Identification of the SRPS operons and prediction of protein stoichiometry of th
 	```
 ### USAGE
 #### Ratio prediction of the identified SRPS opeorns
-In order to predict the ratio/stoichiometry of the SRPS operons, SLOFE uses genome_file, descriptor_file, annotation_file and operon_map. Sample input files are given in sample_input directory. Command to run SLOFE: 
-
+In order to predict the ratio/stoichiometry of the SRPS operons, SLOFE uses genome_file, descriptor_file, annotation_file and operon_map. Sample input files are given in sample_input directory. Command to run SLOFE:  
+	```
 	perl SLOFE.pl -h
-	perl SLOFE.pl <genome_fasta_file> <descr_file> <annotation_from_genbank> <operon_map>
-	Example:
-	perl SLOFE.pl sample_input/test_data/test_seq.fasta sample_input/test_data/H10-mod.descr sample_input/test_data/gene_annotation sample_input/test_data/operon_map
-	perl SLOFE.pl sample_input/Ccel_data/Ccel_genome.fasta sample_input/Ccel_data/H10-mod.descr sample_input/Ccel_data/Ccel_gene_annotation sample_input/Ccel_data/Ccel_operon_map
+	perl SLOFE.pl <genome_fasta_file> <descr_file> <annotation_from_genbank> <operon_map> <output_directory>
+	```  
+	*Note: output_directory parameter is optional. If it is undefined, the current directory will be used for output.*  
+	Example:  
+	```
+	perl SLOFE.pl sample_input/test_data/test_seq.fasta sample_input/test_data/H10-mod.descr sample_input/test_data/gene_annotation sample_input/test_data/operon_map /sample_input/
+	perl SLOFE.pl sample_input/Ccel_data/Ccel_genome.fasta sample_input/Ccel_data/H10-mod.descr sample_input/Ccel_data/Ccel_gene_annotation sample_input/Ccel_data/Ccel_operon_map /sample_input/
+	```
 #### Scripts
 1. `ratio_calc.pl` is part of `SLOFE.pl`.
 2. `extract_seq.pl` extarcts the desired sequence from a fasta file using the coordinates. Usage:
