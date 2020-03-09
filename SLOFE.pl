@@ -35,8 +35,9 @@ if($ARGV[0] eq '-h' || $ARGV[0] eq '-help')
 
 sub help { print "
                                 SLOFE v1.0\n
-Usage: perl SLOFE.pl <genome_fasta_file> <descr> <annotation_file> <operon_map>\n
-SLOFE takes genome file in fasta format, descr file (readme), gene annotation and operon annotation.
+Usage: perl SLOFE.pl <genome_fasta_file> <descr> <annotation_file> <operon_map> <output_directory>\n
+SLOFE takes genome file in fasta format, descr file (readme), gene annotation and operon annotation. <output_directory> parameter
+needs the name of an existing directory and it is optional. If directory name is not defined, current directory will be used for the output.
 1. Genome file must have the extension '.fasta'.
 2. Descriptor (descr) file is used by RNAmotif to predict the desired motifs, which is used for RNA secondary stucture prediction. 
    Descriptor file must have the extension '.descr'.
@@ -45,7 +46,7 @@ SLOFE takes genome file in fasta format, descr file (readme), gene annotation an
 4. Operon annotation/map can be downloaded either from Door database or ProOpDb database. 
    Then it should be prepared in the accepted fromat using scripts 'operon-Door' or 'operon-ProOpDb' (readme).
 
-Example: perl SLOFE.pl sample_input/nc.fasta sample_input/H10-mod.descr sample_input/gene_annotation sample_input/operon_map
+Example: perl SLOFE.pl sample_input/nc.fasta sample_input/H10-mod.descr sample_input/gene_annotation sample_input/operon_map sample_input/
 \n";}
 
 
