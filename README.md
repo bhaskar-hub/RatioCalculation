@@ -27,7 +27,6 @@ Identification of the SRPS operons and prediction of protein stoichiometry of th
 	```
 2. Installation of the RNAMotif and RNAfold from dependencies directory using the `install.sh`.
 	```
-	chmod 755 install.sh
 	sh install.sh
 	```
 #### Manual installation
@@ -68,8 +67,9 @@ Identification of the SRPS operons and prediction of protein stoichiometry of th
 	```
 ### USAGE
 #### Ratio prediction of the identified SRPS opeorns
-In order to predict the ratio/stoichiometry of the SRPS operons, SLOFE uses genome_file, descriptor_file, annotation_file and operon_map. Sample input files are given in sample_input directory. Command to run SLOFE:
-	
+In order to predict the ratio/stoichiometry of the SRPS operons, SLOFE uses genome_file, descriptor_file, annotation_file and operon_map. Sample input files are given in sample_input directory. Command to run SLOFE:  
+*Note: `demo.sh` file is provided in sample_input directory to run all commands.*  
+
 	perl SLOFE.pl -h
 	perl SLOFE.pl <genome_fasta_file> <descr_file> <annotation_from_genbank> <operon_map> <output_directory>  
 	*Note: <output_directory> parameter name should be an existing directory and it is optional. If directory is not defined, the current directory will be used for output.
