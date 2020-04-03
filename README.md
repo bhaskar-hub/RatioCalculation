@@ -1,5 +1,5 @@
 # SLOFE: Stem-LOop Free-Energy
-Identification of the SRPS operons and prediction of protein stoichiometry of their encoded complex using the genome sequence. SLOFE is the combination of Perl and the UNIX utilities such as awk, sed and grep etc and it runs on Linux machine.
+Identification of the SRPS operons and prediction of protein stoichiometry of their encoded complex using the genome sequence. SLOFE is the combination of Perl and the UNIX utilities such as awk, sed, grep etc and it runs on Linux machine.
 
 ### Table of contents
 * [Requirements](#Requirements)
@@ -75,8 +75,8 @@ In order to predict the ratio/stoichiometry of the SRPS operons, SLOFE uses geno
 	*Note: <output_directory> parameter name should be an existing directory and it is optional. If directory is not defined, the current directory will be used for output.
 	
 	Example:  
-	perl SLOFE.pl sample_input/test_data/test_seq.fasta sample_input/test_data/H10-mod.descr sample_input/test_data/gene_annotation sample_input/test_data/operon_map /sample_input/
-	perl SLOFE.pl sample_input/Ccel_data/Ccel_genome.fasta sample_input/Ccel_data/H10-mod.descr sample_input/Ccel_data/Ccel_gene_annotation sample_input/Ccel_data/Ccel_operon_map /sample_input/
+	perl SLOFE.pl sample_input/test_data/test_seq.fasta sample_input/test_data/H10-mod.descr sample_input/test_data/gene_annotation sample_input/test_data/operon_map sample_input/
+	perl SLOFE.pl sample_input/Ccel_data/Ccel_genome.fasta sample_input/Ccel_data/H10-mod.descr sample_input/Ccel_data/Ccel_gene_annotation sample_input/Ccel_data/Ccel_operon_map sample_input/
 	
 #### Scripts
 1. `ratio_calc.pl` is part of `SLOFE.pl`.
