@@ -153,4 +153,4 @@ In order to predict the ratio/stoichiometry of the SRPS operons, SLOFE uses geno
 
 ### Error handling during RNAMotif and RNAfold installation
 1. Errors during RNAMotif installation: Possible error could be the unavailability of the "Development tools" such as "flex" and "bison". For this, either specific development tool source could be downloaded (and installed) or install using yum (`yum groupinstall "Development tools"` or `yum install flex bison`) and apt-get (`apt-get install build-essential`) based on the Linux distro.
-2. Error during RNAfold installation: `perl-devel` related errors generally occurred such as `Can't locate ExtUtils/MakeMaker.pm`. For this, either install `perl-devel` using yum/apt-get/cpan or install the specific module using yum (`yum install perl-ExtUtils-MakeMaker`) or cpan (`cpan -i ExtUtils::MakeMaker`).
+2. Errors during RNAfold installation: `perl-devel` related errors generally occurred such as `Can't locate ExtUtils/MakeMaker.pm`. For this, either install `perl-devel` using yum/apt-get/cpan or install the specific module using yum (`yum install perl-ExtUtils-MakeMaker`) or cpan (`cpan -i ExtUtils::MakeMaker`).
