@@ -158,4 +158,4 @@ In order to predict the ratio/stoichiometry of the SRPS operons, SLOFE uses geno
 
 ### Citation
 Bhaskar Y, Su X, Xu C and Xu J (2021) Predicting Selective RNA Processing and Stabilization Operons in Clostridium spp. *Front. Microbiol.* 12:673349. 
-doi: 10.3389/fmicb.2021.673349
+https://doi.org/10.3389/fmicb.2021.673349
